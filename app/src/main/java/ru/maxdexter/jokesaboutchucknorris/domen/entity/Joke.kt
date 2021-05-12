@@ -1,4 +1,4 @@
-package ru.maxdexter.jokesaboutchucknorris.ui.entity
+package ru.maxdexter.jokesaboutchucknorris.domen.entity
 
 data class Joke(
     val id: Int,

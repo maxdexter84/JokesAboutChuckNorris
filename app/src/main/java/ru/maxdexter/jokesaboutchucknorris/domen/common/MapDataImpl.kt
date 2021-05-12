@@ -1,7 +1,7 @@
 package ru.maxdexter.jokesaboutchucknorris.domen.common
 
 import ru.maxdexter.jokesaboutchucknorris.data.remote_source.entiry.Value
-import ru.maxdexter.jokesaboutchucknorris.ui.entity.Joke
+import ru.maxdexter.jokesaboutchucknorris.domen.entity.Joke
 
 class MapDataImpl : MapData {
 

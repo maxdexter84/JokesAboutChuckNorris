@@ -2,7 +2,7 @@ package ru.maxdexter.jokesaboutchucknorris.ui.adapters
 
 import android.view.ViewGroup
 import androidx.recyclerview.widget.ListAdapter
-import ru.maxdexter.jokesaboutchucknorris.ui.entity.Joke
+import ru.maxdexter.jokesaboutchucknorris.domen.entity.Joke
 
 class JokeAdapter : ListAdapter<Joke, JokeViewHolder>(DiffJoke()) {
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): JokeViewHolder {

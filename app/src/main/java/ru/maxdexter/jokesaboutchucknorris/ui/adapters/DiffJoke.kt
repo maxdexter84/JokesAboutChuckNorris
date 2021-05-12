@@ -1,7 +1,7 @@
 package ru.maxdexter.jokesaboutchucknorris.ui.adapters
 
 import androidx.recyclerview.widget.DiffUtil
-import ru.maxdexter.jokesaboutchucknorris.ui.entity.Joke
+import ru.maxdexter.jokesaboutchucknorris.domen.entity.Joke
 
 class DiffJoke: DiffUtil.ItemCallback<Joke>() {
     override fun areItemsTheSame(oldItem: Joke, newItem: Joke): Boolean {

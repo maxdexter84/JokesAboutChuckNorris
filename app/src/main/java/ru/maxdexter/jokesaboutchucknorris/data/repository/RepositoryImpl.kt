@@ -1,4 +1,4 @@
-package ru.maxdexter.jokesaboutchucknorris.repository
+package ru.maxdexter.jokesaboutchucknorris.data.repository
 
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.flow
