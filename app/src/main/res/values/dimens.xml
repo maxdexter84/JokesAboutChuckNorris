@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="btn_reload_bottom_spacing">29dp</dimen>
+    <dimen name="et_quantity_width">170dp</dimen>
+    <dimen name="et_quantity_bottom_spacing">18dp</dimen>
+    <dimen name="et_quantity_top_spacing">20dp</dimen>
+</resources>

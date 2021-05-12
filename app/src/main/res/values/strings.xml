@@ -2,4 +2,6 @@
     <string name="app_name">JokesAboutChuckNorris</string>
     <string name="jokes">Jokes</string>
     <string name="web">Web</string>
+    <string name="reload">reload</string>
+    <string name="count">Count</string>
 </resources>
