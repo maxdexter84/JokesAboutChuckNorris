@@ -4,5 +4,5 @@ import ru.maxdexter.jokesaboutchucknorris.data.remote_source.entiry.Value
 import ru.maxdexter.jokesaboutchucknorris.domen.entity.Joke
 
 interface MapData {
-    fun valueToJoke(value: Value) : Joke
+    fun valueToJoke(value: Value): Joke
 }

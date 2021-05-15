@@ -8,7 +8,7 @@ import ru.maxdexter.jokesaboutchucknorris.domen.entity.Joke
 
 class JokeViewHolder(private val binding: ItemJokeBinding) : RecyclerView.ViewHolder(binding.root) {
 
-    fun bind(item: Joke){
+    fun bind(item: Joke) {
         binding.tvJoke.text = item.joke
     }
 

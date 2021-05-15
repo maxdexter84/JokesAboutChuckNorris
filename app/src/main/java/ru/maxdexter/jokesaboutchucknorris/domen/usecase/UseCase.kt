@@ -4,5 +4,5 @@ import kotlinx.coroutines.flow.Flow
 
 
 interface UseCase<out T> {
-     fun get(count: Int): Flow<T>
+    fun get(count: Int): Flow<T>
 }

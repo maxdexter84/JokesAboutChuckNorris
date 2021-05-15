@@ -10,6 +10,6 @@ class JokeAdapter : ListAdapter<Joke, JokeViewHolder>(DiffJoke()) {
     }
 
     override fun onBindViewHolder(holder: JokeViewHolder, position: Int) {
-       holder.bind(getItem(position))
+        holder.bind(getItem(position))
     }
 }

@@ -11,6 +11,7 @@ import ru.maxdexter.jokesaboutchucknorris.domen.repositories.Repository
 import ru.maxdexter.jokesaboutchucknorris.domen.source.RemoteSource
 
 const val TAG = "NETWORK_ERROR"
+
 @Suppress("UNCHECKED_CAST")
 class RepositoryImpl(private val source: RemoteSource, private val map: MapData) : Repository {
 

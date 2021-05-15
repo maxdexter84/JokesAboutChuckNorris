@@ -9,7 +9,7 @@ class WebViewModel : ViewModel() {
     private val _currentUrl = MutableStateFlow("https://www.icndb.com/api")
     val currentUrl = _currentUrl.asStateFlow()
 
-    fun setCurrentUrl(url: String){
+    fun setCurrentUrl(url: String) {
         _currentUrl.value = url
     }
 }

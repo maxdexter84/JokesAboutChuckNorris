@@ -6,6 +6,18 @@
     android:layout_height="match_parent"
     tools:context=".ui.fragments.jokes.JokesFragment">
 
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        app:title="@string/joke"
+        app:titleTextColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+    </androidx.appcompat.widget.Toolbar>
+
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/jokes_recycler"
         android:layout_width="match_parent"
@@ -13,20 +25,18 @@
         app:layout_constraintBottom_toTopOf="@+id/et_joke_quantity"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
 
     <EditText
         android:id="@+id/et_joke_quantity"
         android:layout_width="@dimen/et_quantity_width"
         android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/et_quantity_top_spacing"
         android:layout_marginBottom="@dimen/et_quantity_bottom_spacing"
         android:hint="@string/count"
         android:inputType="number"
         app:layout_constraintBottom_toTopOf="@+id/btn_reload_joke"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/jokes_recycler" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/btn_reload_joke"

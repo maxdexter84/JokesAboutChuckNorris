@@ -4,4 +4,6 @@
     <string name="web">Web</string>
     <string name="reload">reload</string>
     <string name="count">Count</string>
+    <string name="joke">Joke</string>
+    <string name="api">Api info</string>
 </resources>
