@@ -1,13 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:android="http://schemas.android.com/apk/res/android">
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <item
         android:id="@+id/jokesFragment"
+        app:showAsAction="ifRoom"
         android:icon="@drawable/ic_vector__grey"
         android:title="@string/jokes" />
+
     <item
         android:id="@+id/webFragment"
+        app:showAsAction="ifRoom"
         android:icon="@drawable/ic_web"
-        android:title="@string/web" />
+        android:title="@string/web"/>
+
 </menu>

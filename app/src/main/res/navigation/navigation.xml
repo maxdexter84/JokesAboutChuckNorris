@@ -13,6 +13,7 @@
     <fragment
         android:id="@+id/webFragment"
         android:name="ru.maxdexter.jokesaboutchucknorris.ui.fragments.web.WebFragment"
-        android:label="web_fragment"
-        tools:layout="@layout/web_fragment" />
+        android:label="WebFragment"
+        tools:layout="@layout/web_fragment"
+        />
 </navigation>

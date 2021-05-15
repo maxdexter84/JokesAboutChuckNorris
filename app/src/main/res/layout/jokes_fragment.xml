@@ -1,41 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ui.fragments.jokes.JokesFragment">
 
-   <androidx.recyclerview.widget.RecyclerView
-       android:id="@+id/jokes_recycler"
-       android:layout_width="match_parent"
-       android:layout_height="0dp"
-       app:layout_constraintBottom_toTopOf="@+id/et_joke_quantity"
-       app:layout_constraintEnd_toEndOf="parent"
-       app:layout_constraintStart_toStartOf="parent"
-       app:layout_constraintTop_toTopOf="parent" />
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/jokes_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/et_joke_quantity"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
-   <EditText
-       android:id="@+id/et_joke_quantity"
-       android:layout_width="@dimen/et_quantity_width"
-       android:layout_height="wrap_content"
-       android:layout_marginTop="@dimen/et_quantity_top_spacing"
-       android:layout_marginBottom="@dimen/et_quantity_bottom_spacing"
-       android:hint="@string/count"
-       android:inputType="number"
-       app:layout_constraintBottom_toTopOf="@+id/btn_reload_joke"
-       app:layout_constraintEnd_toEndOf="parent"
-       app:layout_constraintStart_toStartOf="parent"
-       app:layout_constraintTop_toBottomOf="@+id/jokes_recycler" />
+    <EditText
+        android:id="@+id/et_joke_quantity"
+        android:layout_width="@dimen/et_quantity_width"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/et_quantity_top_spacing"
+        android:layout_marginBottom="@dimen/et_quantity_bottom_spacing"
+        android:hint="@string/count"
+        android:inputType="number"
+        app:layout_constraintBottom_toTopOf="@+id/btn_reload_joke"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/jokes_recycler" />
 
-   <Button
-       android:id="@+id/btn_reload_joke"
-       android:layout_width="wrap_content"
-       android:layout_height="wrap_content"
-       android:text="@string/reload"
-       android:layout_marginBottom="@dimen/btn_reload_bottom_spacing"
-       app:layout_constraintBottom_toBottomOf="parent"
-       app:layout_constraintEnd_toEndOf="parent"
-       app:layout_constraintStart_toStartOf="parent" />
+    <Button
+        android:id="@+id/btn_reload_joke"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/btn_reload_bottom_spacing"
+        android:text="@string/reload"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

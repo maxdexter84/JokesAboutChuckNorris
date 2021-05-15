@@ -8,9 +8,10 @@ import ru.maxdexter.jokesaboutchucknorris.domen.source.RemoteSource
 
 class RemoteSourceImpl(private val jokes: JokesService) : RemoteSource {
 
-    override suspend fun loadJokes(): Result<*> {
+    override suspend fun loadJokes(count: Int): Result<*> {
         return try {
-            Result.Success(loadJokes())
+            val res = jokes.getAllJokes(count)
+            Result.Success(res)
         } catch (e: IOException) {
             Result.Error(e)
         }
