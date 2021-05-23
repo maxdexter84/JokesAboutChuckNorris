@@ -9,11 +9,12 @@ import ru.maxdexter.jokesaboutchucknorris.domen.common.MapData
 import ru.maxdexter.jokesaboutchucknorris.domen.common.Result
 import ru.maxdexter.jokesaboutchucknorris.domen.repositories.Repository
 import ru.maxdexter.jokesaboutchucknorris.domen.source.RemoteSource
+import javax.inject.Inject
 
 const val TAG = "NETWORK_ERROR"
 
 @Suppress("UNCHECKED_CAST")
-class RepositoryImpl(private val source: RemoteSource, private val map: MapData) : Repository {
+class RepositoryImpl @Inject constructor(private val source: RemoteSource, private val map: MapData) : Repository {
 
     override fun getJokes(count: Int) = flow {
         source.runCatching {
