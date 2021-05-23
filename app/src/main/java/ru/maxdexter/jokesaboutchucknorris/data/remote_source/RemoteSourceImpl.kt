@@ -4,9 +4,10 @@ import okio.IOException
 import ru.maxdexter.jokesaboutchucknorris.data.remote_source.network.JokesService
 import ru.maxdexter.jokesaboutchucknorris.domen.common.Result
 import ru.maxdexter.jokesaboutchucknorris.domen.source.RemoteSource
+import javax.inject.Inject
 
 
-class RemoteSourceImpl(private val jokes: JokesService) : RemoteSource {
+class RemoteSourceImpl @Inject constructor(private val jokes: JokesService) : RemoteSource {
 
     override suspend fun loadJokes(count: Int): Result<*> {
         return try {

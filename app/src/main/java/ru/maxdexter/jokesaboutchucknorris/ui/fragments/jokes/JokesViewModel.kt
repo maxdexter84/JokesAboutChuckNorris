@@ -8,8 +8,9 @@ import kotlinx.coroutines.flow.collect
 import kotlinx.coroutines.launch
 import ru.maxdexter.jokesaboutchucknorris.domen.entity.Joke
 import ru.maxdexter.jokesaboutchucknorris.domen.usecase.UseCase
+import javax.inject.Inject
 
-class JokesViewModel(private val useCase: UseCase<List<Joke>>) : ViewModel() {
+class JokesViewModel @Inject constructor(private val useCase: UseCase<List<Joke>>) : ViewModel() {
 
     private val _currentJokes = MutableStateFlow<List<Joke>>(emptyList())
     val currentJokes = _currentJokes.asStateFlow()
